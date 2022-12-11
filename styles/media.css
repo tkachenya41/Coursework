@@ -1,0 +1,16 @@
+@media (max-width: 1160px) {
+  .first-block .body__pic {
+    max-width: 95%;
+  }
+  .first-block .body {
+    display: grid;
+    grid-template-columns: 63% 37%;
+  }
+  .first-block .header {
+    display: grid;
+    grid-template-columns: 20% 78%;
+  }
+  .content__header {
+    margin-bottom: 40px;
+  }
+}
