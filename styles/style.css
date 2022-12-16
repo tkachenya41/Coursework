@@ -287,4 +287,145 @@
   padding-right: 0;
   padding-left: 0;
   border: none;
+}
+
+.third-block {
+  display: flex;
+  justify-content: center;
+  padding: 10% 0% 0% 0%;
+}
+.third-block .form {
+  box-sizing: content-box;
+  padding: 5% 4% 5% 4%;
+  max-width: 540px;
+  max-height: 787px;
+  background: #ffffff;
+  box-shadow: 0px 7px 30px rgba(121, 121, 121, 0.2);
+  border-radius: 25px;
+}
+.third-block .header-form {
+  text-align: center;
+}
+.third-block .form-header {
+  margin-bottom: 8px;
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 32px;
+  color: #47a7e3;
+}
+.third-block .form-header-content {
+  margin-bottom: 35px;
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  color: #585858;
+}
+.third-block .price-appearance {
+  position: relative;
+  margin: 0px 0px 20px 20px;
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  color: #83bcdc;
+}
+.third-block .price-appearance::before {
+  position: absolute;
+  display: block;
+  content: url("../pics/info.png");
+  left: -25px;
+  top: -3px;
+}
+.third-block .form-content {
+  display: flex;
+  flex-direction: column;
+}
+.third-block .form-content-inp:last-child {
+  border: 1px solid #c9c9c9;
+  border-radius: 8px;
+  margin-bottom: 14px;
+  padding: 10px 0px 50px 0px;
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  color: #c7c7c7;
+}
+.third-block .form-content-inp:not(:last-child) {
+  height: 40px;
+  border: 1px solid #c9c9c9;
+  border-radius: 8px;
+  margin-bottom: 14px;
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  color: #c7c7c7;
+}
+.third-block .forms {
+  display: flex;
+}
+.third-block .form-checkbox1 {
+  width: 280px;
+  margin-bottom: 36px;
+  display: flex;
+  flex-direction: column;
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  color: #585858;
+}
+.third-block .form-checkbox2 {
+  width: 220px;
+  margin-bottom: 36px;
+  display: flex;
+  flex-direction: column;
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  color: #585858;
+}
+.third-block .checkbox-item {
+  margin-bottom: 17px;
+}
+.third-block .form-submit {
+  max-width: 395px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+.third-block .submit {
+  min-height: 94px;
+  border: 2px solid #47a7e3;
+  border-radius: 25px;
+  margin-bottom: 20px;
+  background-color: transparent;
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  color: #47a7e3;
+}
+.third-block .agree {
+  margin: 0 auto;
+  position: relative;
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 13px;
+  color: #585858;
+}
+.third-block .agree::before {
+  position: absolute;
+  content: url("../pics/check.svg");
+  left: -25px;
+  top: -5px;
+}
+.third-block .form-pic {
+  background: #f5faff;
+  border-radius: 50%;
 }/*# sourceMappingURL=style.css.map */
