@@ -4,6 +4,8 @@ $col1: #585858;
 $col2: #47a7e3;
 $col3: white;
 $col4: #f68738;
+$col5: #306694;
+$col6: #b5b5b5;
 //------------ШАБЛОНЫ--------------------------
 %triangle {
   position: absolute;
@@ -15,12 +17,12 @@ $col4: #f68738;
   border-bottom: 5px solid transparent;
 }
 //------------МИКСИНЫ--------------------------
-@mixin font($ff, $fw, $fs, $ln, $tt) {
+@mixin font($ff, $fw, $fs, $ln, $c) {
   font-family: $ff;
   font-weight: $fw;
   font-size: $fs;
   line-height: $ln;
-  text-transform: $ln;
+  color: $c;
 }
 //-----------FIRST__BLOCK-----------------------
 ._container {
@@ -104,13 +106,11 @@ $col4: #f68738;
     grid-template-rows: 20% 49% 31%;
   }
   .content__header {
-    @include font("Montserrat", 700, 46px, 60px, 0);
-    color: $col2;
+    @include font("Montserrat", 700, 46px, 60px, $col2);
   }
   .content__header-media {
     display: none;
-    @include font("Montserrat", 700, 20px, 26px, 0);
-    color: $col2;
+    @include font("Montserrat", 700, 20px, 26px, $col2);
     margin: 0 auto;
   }
   .body__pic {
@@ -137,11 +137,10 @@ $col4: #f68738;
     }
   }
   .content__btn {
-    color: $col3;
     border-style: none;
     max-width: 366px;
     min-height: 92px;
-    @include font("Montserrat", 600, 16px, 20px, 0);
+    @include font("Montserrat", 600, 16px, 20px, $col3);
     background: linear-gradient(180deg, #ffa96b -21.43%, #ee7a28 100%);
     border-radius: 25px;
     &:hover {
@@ -152,4 +151,107 @@ $col4: #f68738;
 }
 .dots {
   text-align: center;
+  @include font("Montserrat", 700, 40px, 50px, $col5);
+}
+.second-block {
+  .second__header {
+    padding: 4% 4% 0% 4%;
+    display: flex;
+  }
+  .header-grid {
+    flex: 1 1 auto;
+  }
+  .header__title {
+    @include font("Montserrat", 700, 20px, 26px, $col1);
+    margin-bottom: 1%;
+  }
+  .header-content {
+    @include font("Montserrat", 500, 16px, 26px, $col1);
+    max-width: 905px;
+  }
+  .header-prices {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .price {
+    @include font("Montserrat", 400, 35.1781px, 36px, $col1);
+    letter-spacing: 1.34795px;
+    display: flex;
+  }
+  .price span {
+    padding-left: 2%;
+    @include font("Montserrat", 600, 47.1781px, 30px, $col1);
+  }
+  .description {
+    text-align: center;
+    @include font("Montserrat", 500, 12px, 26px, $col6);
+  }
+}
+.slider {
+  max-width: 1204px;
+  position: relative;
+  min-width: 0;
+  margin: 0 auto;
+}
+.slider .slider__item {
+  width: 450px;
+  height: auto;
+  text-align: center;
+}
+.slider__item img {
+  width: 350px;
+}
+.slick-list {
+  overflow: hidden;
+}
+.slick-track {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.slick-slide.slick-center {
+  opacity: 1;
+}
+.slick-arrow {
+  margin: -30px 0px 0px 0px;
+  border: 0;
+  font-size: 0;
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  width: 15px;
+  height: 30px;
+}
+.slick-arrow.slick-prev {
+  left: 0;
+  background: url(../pics/arrow1.png) 0 0 / 100% no-repeat;
+}
+.slick-arrow.slick-next {
+  background: url(../pics/arrow2.png) 0 0 / 100% no-repeat;
+  right: 0;
+}
+.slider .slick-dots {
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.slider .slick-dots li {
+  list-style: none;
+  margin: 0 3px;
+}
+.slider .slick-dots li.slick-active button {
+  background-color: transparent;
+  border: 1px solid gray;
+}
+.slider .slick-dots li button {
+  font-size: 0;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: gray;
+  padding-right: 0;
+  padding-left: 0;
+  border: none;
 }
