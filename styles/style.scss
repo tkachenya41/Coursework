@@ -256,108 +256,167 @@ $col6: #b5b5b5;
   border: none;
 }
 .third-block {
+  padding: 0% 4% 0% 3%;
   display: flex;
-  justify-content: center;
-  padding: 10% 0% 0% 0%;
-  .form {
-    box-sizing: content-box;
-    padding: 5% 4% 5% 4%;
-    max-width: 540px;
-    max-height: 787px;
-    background: #ffffff;
-    box-shadow: 0px 7px 30px rgba(121, 121, 121, 0.2);
-    border-radius: 25px;
+  justify-content: space-between;
+  margin-top: 10%;
+  background: url(../pics/form-pic.svg), url(../pics/round.png);
+  background-repeat: no-repeat;
+  background-position: 91% 50%, 100% 50%;
+}
+.form {
+  box-sizing: border-box;
+  padding: 5% 4% 5% 4%;
+  max-width: 540px;
+  background: #ffffff;
+  box-shadow: 0px 7px 30px rgba(121, 121, 121, 0.2);
+  border-radius: 25px;
+}
+.header-form {
+  text-align: center;
+}
+.form-header {
+  margin-bottom: 8px;
+  @include font("Montserrat", 700, 28px, 32px, $col2);
+}
+.form-header-content {
+  width: 280px;
+  margin: 0 auto 35px auto;
+  @include font("Montserrat", 500, 12px, 15px, $col1);
+}
+.price-appearance {
+  position: relative;
+  margin: 0px 0px 20px 20px;
+  @include font("Montserrat", 700, 14px, 18px, #83bcdc);
+}
+.price-appearance::before {
+  position: absolute;
+  display: block;
+  content: url("../pics/info.png");
+  left: -25px;
+  top: -3px;
+}
+.form-content {
+  display: flex;
+  flex-direction: column;
+}
+.form-content-inp:last-child {
+  border: 1px solid #c9c9c9;
+  border-radius: 8px;
+  margin-bottom: 14px;
+  padding: 10px 0px 50px 0px;
+  @include font("Montserrat", 500, 12px, 15px, #c7c7c7);
+}
+.form-content-inp:not(:last-child) {
+  height: 40px;
+  border: 1px solid #c9c9c9;
+  border-radius: 8px;
+  margin-bottom: 14px;
+  @include font("Montserrat", 500, 12px, 15px, #c7c7c7);
+}
+.forms {
+  display: flex;
+}
+.form-checkbox1 {
+  width: 280px;
+  margin-bottom: 36px;
+  display: flex;
+  flex-direction: column;
+  @include font("Montserrat", 500, 12px, 15px, $col1);
+}
+.form-checkbox2 {
+  width: 220px;
+  margin-bottom: 36px;
+  display: flex;
+  flex-direction: column;
+  @include font("Montserrat", 500, 12px, 15px, $col1);
+}
+.checkbox-item {
+  margin-bottom: 17px;
+}
+.checkbox-inp {
+}
+.form-submit {
+  max-width: 395px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+.submit {
+  min-height: 94px;
+  border: 2px solid #47a7e3;
+  border-radius: 25px;
+  margin-bottom: 20px;
+  background-color: transparent;
+  @include font("Montserrat", 600, 18px, 22px, $col2);
+}
+.submit:hover {
+  transition: 2s;
+  background-color: #fabe94;
+}
+.agree {
+  margin: 0 auto 0 60px;
+  position: relative;
+  @include font("Montserrat", 600, 11px, 13px, $col1);
+}
+.agree::before {
+  position: absolute;
+  content: url("../pics/check.svg");
+  left: -25px;
+  top: -5px;
+}
+.agree span {
+  text-decoration: underline;
+  color: $col2;
+}
+.social__block {
+  display: flex;
+  justify-content: space-around;
+  margin: calc((162px / 1204px) * 100%) auto calc((149px / 1204px) * 100%) auto;
+  .social__pic {
   }
-  .header-form {
+  .social__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .social__text {
+    position: relative;
     text-align: center;
+    max-width: 400px;
+    @include font("Monserrat", 500, 16px, 26px, $col1);
+    margin-bottom: calc((50px / 400px) * 100%);
   }
-  .form-header {
-    margin-bottom: 8px;
-    @include font("Montserrat", 700, 28px, 32px, $col2);
-  }
-  .form-header-content {
-    margin-bottom: 35px;
-    @include font("Montserrat", 500, 12px, 15px, $col1);
-  }
-  .price-appearance {
-    position: relative;
-    margin: 0px 0px 20px 20px;
-    @include font("Montserrat", 700, 14px, 18px, #83bcdc);
-  }
-  .price-appearance::before {
+  .social__text::after {
     position: absolute;
-    display: block;
-    content: url("../pics/info.png");
-    left: -25px;
-    top: -3px;
+    content: url("../pics/like.svg");
+    top: -80px;
+    right: -40px;
   }
-  .form-content {
+  .socials {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
   }
-  .form-content-inp:last-child {
-    border: 1px solid #c9c9c9;
-    border-radius: 8px;
-    margin-bottom: 14px;
-    padding: 10px 0px 50px 0px;
-    @include font("Montserrat", 500, 12px, 15px, #c7c7c7);
+  .social1 {
+    margin-right: calc((40px / 400px) * 100%);
   }
-  .form-content-inp:not(:last-child) {
-    height: 40px;
-    border: 1px solid #c9c9c9;
-    border-radius: 8px;
-    margin-bottom: 14px;
-    @include font("Montserrat", 500, 12px, 15px, #c7c7c7);
-  }
-  .forms {
+  .social1,
+  .social2 {
     display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ffffff;
+    box-shadow: 0px 7px 15px rgba(98, 112, 122, 0.18);
+    border-radius: 20px;
+    width: 123px;
+    height: 123px;
   }
-  .form-checkbox1 {
-    width: 280px;
-    margin-bottom: 36px;
-    display: flex;
-    flex-direction: column;
-    @include font("Montserrat", 500, 12px, 15px, $col1);
+  .social1:hover {
+    background-color: rgb(247, 157, 143);
+    transition: 500ms;
   }
-  .form-checkbox2 {
-    width: 220px;
-    margin-bottom: 36px;
-    display: flex;
-    flex-direction: column;
-    @include font("Montserrat", 500, 12px, 15px, $col1);
-  }
-  .checkbox-item {
-    margin-bottom: 17px;
-  }
-  .checkbox-inp {
-  }
-  .form-submit {
-    max-width: 395px;
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
-  }
-  .submit {
-    min-height: 94px;
-    border: 2px solid #47a7e3;
-    border-radius: 25px;
-    margin-bottom: 20px;
-    background-color: transparent;
-    @include font("Montserrat", 600, 18px, 22px, $col2);
-  }
-  .agree {
-    margin: 0 auto;
-    position: relative;
-    @include font("Montserrat", 600, 11px, 13px, $col1);
-  }
-  .agree::before {
-    position: absolute;
-    content: url("../pics/check.svg");
-    left: -25px;
-    top: -5px;
-  }
-  .form-pic {
-    background: #f5faff;
-    border-radius: 50%;
+  .social2:hover {
+    transition: 500ms;
+    background-color: #47a7e3;
   }
 }

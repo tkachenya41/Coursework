@@ -13,6 +13,15 @@
   .content__header {
     margin-bottom: 40px;
   }
+  .third-block {
+    background-position: 50% 0%, 50% 0%;
+    padding-top: 35%;
+    background-size: 30% 30%, 50% 40%;
+    justify-content: center;
+  }
+  .social__pic {
+    max-width: 50%;
+  }
 }
 @media (max-width: 891px) {
   .first-block .menu__btn {
@@ -107,6 +116,20 @@
   }
 }
 @media (max-width: 678px) {
+  .third-block {
+    padding-top: 35%;
+    background-size: 25% 15%, 35% 15%;
+  }
+  .form {
+    width: 100%;
+    margin-bottom: 20%;
+  }
+  .social__pic {
+    display: none;
+  }
+  .social__block .social__text::after {
+    right: 35%;
+  }
   .second-block .second__header {
     flex-direction: column-reverse;
     text-align: center;
