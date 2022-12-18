@@ -24,6 +24,18 @@
   }
 }
 @media (max-width: 891px) {
+  .consultation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .consultation .conslultation__header::before {
+    position: fixed;
+  }
+
+  .cons__post {
+    display: none;
+  }
   .first-block .menu__btn {
     display: none;
   }

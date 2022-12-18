@@ -420,3 +420,77 @@ $col6: #b5b5b5;
     background-color: #47a7e3;
   }
 }
+.services {
+  display: flex;
+  max-width: 1200px;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  .serv {
+    margin: calc((100px / 1200px) * 100%) auto calc((40px / 1200px) * 100%) auto;
+    width: 244px;
+    height: 244px;
+    background: #ffffff;
+    box-shadow: 0px 7px 15px rgba(98, 112, 122, 0.18);
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .service__text {
+    max-width: 250px;
+    @include font("Montserrat", 700, calc(14px + 0.3vw), 26px, $col1);
+    text-align: center;
+  }
+}
+.footer {
+  background: url(../pics/bg-foot.png);
+}
+.consultation {
+  max-width: 975px;
+  max-height: 400px;
+  margin-top: calc((195px / 1204px) * 100%);
+  display: flex;
+  box-shadow: 6px 7px 7px rgba(137, 137, 137, 0.1);
+  border-radius: 25px;
+  background-color: #ffffff;
+  .consultation__content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 5px;
+  }
+  .ldots {
+    max-width: 157px;
+  }
+  .conslultation__header::before {
+    position: absolute;
+    content: url(../pics/ldots.svg);
+    left: -80px;
+    top: -50px;
+  }
+  .conslultation__header {
+    margin-top: calc((50px / 410px) * 100%);
+    padding-top: 31px;
+    position: relative;
+    @include font("Montserrat", 700, calc(20px + 0.5vw), 32px, $col2);
+  }
+  .conslultation__text {
+    @include font("Montserrat", 500, calc(14px + 0.2vw), 26px, $col1);
+    margin-top: calc((30px / 410px) * 100%);
+    margin-bottom: calc((24px / 410px) * 100%);
+  }
+
+  .conslultation__btn {
+    @include font("Montserrat", 600, 10px, 12px, #ffffff);
+    background: linear-gradient(180deg, #f29755 -21.43%, #ed7f31 100%);
+    border-radius: 16px;
+    min-width: 320px;
+    min-height: 68px;
+    border: none;
+    margin: 0 auto;
+  }
+  .cons__post {
+    max-width: 490px;
+  }
+}
