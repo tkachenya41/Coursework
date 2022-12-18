@@ -432,7 +432,7 @@
 
 .submit:hover {
   transition: 2s;
-  background-color: #fabe94;
+  background: #fabe94;
 }
 
 .agree {
@@ -460,7 +460,7 @@
 .social__block {
   display: flex;
   justify-content: space-around;
-  margin: 13.4551495017% auto 12.3754152824% auto;
+  margin: 8.4375% auto 7.7604166667% auto;
 }
 .social__block .social__content {
   display: flex;
@@ -528,6 +528,11 @@
   align-items: center;
   justify-content: center;
 }
+.services .serv:hover {
+  transition: 500ms;
+  background-color: #eba16d;
+  box-shadow: 10px 10px 10px #b5b5b5;
+}
 .services .service__text {
   max-width: 250px;
   font-family: "Montserrat";
@@ -545,7 +550,7 @@
 .consultation {
   max-width: 975px;
   max-height: 400px;
-  margin-top: 16.196013289%;
+  margin-top: 10.15625%;
   display: flex;
   box-shadow: 6px 7px 7px rgba(137, 137, 137, 0.1);
   border-radius: 25px;
@@ -591,12 +596,16 @@
   font-size: 10px;
   line-height: 12px;
   color: #ffffff;
-  background: linear-gradient(180deg, #f29755 -21.43%, #ed7f31 100%);
+  background: #f68738;
   border-radius: 16px;
   min-width: 320px;
   min-height: 68px;
   border: none;
   margin: 0 auto;
+}
+.consultation .conslultation__btn:hover {
+  transition: 500ms;
+  background: #47a7e3;
 }
 .consultation .cons__post {
   max-width: 490px;

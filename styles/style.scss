@@ -352,7 +352,7 @@ $col6: #b5b5b5;
 }
 .submit:hover {
   transition: 2s;
-  background-color: #fabe94;
+  background: #fabe94;
 }
 .agree {
   margin: 0 auto 0 60px;
@@ -372,7 +372,7 @@ $col6: #b5b5b5;
 .social__block {
   display: flex;
   justify-content: space-around;
-  margin: calc((162px / 1204px) * 100%) auto calc((149px / 1204px) * 100%) auto;
+  margin: calc((162px / 1920px) * 100%) auto calc((149px / 1920px) * 100%) auto;
   .social__pic {
   }
   .social__content {
@@ -436,7 +436,11 @@ $col6: #b5b5b5;
     align-items: center;
     justify-content: center;
   }
-
+  .serv:hover {
+    transition: 500ms;
+    background-color: #eba16d;
+    box-shadow: 10px 10px 10px #b5b5b5;
+  }
   .service__text {
     max-width: 250px;
     @include font("Montserrat", 700, calc(14px + 0.3vw), 26px, $col1);
@@ -449,7 +453,7 @@ $col6: #b5b5b5;
 .consultation {
   max-width: 975px;
   max-height: 400px;
-  margin-top: calc((195px / 1204px) * 100%);
+  margin-top: calc((195px / 1920px) * 100%);
   display: flex;
   box-shadow: 6px 7px 7px rgba(137, 137, 137, 0.1);
   border-radius: 25px;
@@ -483,12 +487,16 @@ $col6: #b5b5b5;
 
   .conslultation__btn {
     @include font("Montserrat", 600, 10px, 12px, #ffffff);
-    background: linear-gradient(180deg, #f29755 -21.43%, #ed7f31 100%);
+    background: $col4;
     border-radius: 16px;
     min-width: 320px;
     min-height: 68px;
     border: none;
     margin: 0 auto;
+  }
+  .conslultation__btn:hover {
+    transition: 500ms;
+    background: #47a7e3;
   }
   .cons__post {
     max-width: 490px;

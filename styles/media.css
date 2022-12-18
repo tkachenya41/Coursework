@@ -32,7 +32,6 @@
   .consultation .conslultation__header::before {
     position: fixed;
   }
-
   .cons__post {
     display: none;
   }
