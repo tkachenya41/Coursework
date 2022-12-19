@@ -544,7 +544,7 @@
 }
 
 .footer {
-  background: url(../pics/bg-foot.png);
+  background: url(../pics/chlen.svg);
 }
 
 .consultation {
@@ -609,4 +609,103 @@
 }
 .consultation .cons__post {
   max-width: 490px;
+}
+
+.main__footers {
+  display: flex;
+  justify-content: center;
+  background: url(../pics/infin.svg) no-repeat;
+  background-size: 40% 40%;
+  background-position: -15% 120%;
+  padding-bottom: 25px;
+}
+.main__footers .main__footer1 {
+  display: flex;
+}
+.main__footers .main__footer2 {
+  display: flex;
+}
+.main__footers .main__footer {
+  min-width: 212px;
+  max-width: 212px;
+  margin-top: 4.7342192691%;
+}
+.main__footers .footer__header {
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: calc(12px + 0.1vw);
+  line-height: 22px;
+  color: white;
+  border-bottom: 1px solid #b5dfff;
+}
+.main__footers .footer__header:last-of-type {
+  width: 150px;
+}
+.main__footers .footer__list {
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: calc(9px + 0.1vw);
+  line-height: 15px;
+  color: #ffffff;
+}
+.main__footers .footer__item {
+  margin-top: 2.6666666667%;
+  display: flex;
+  flex-wrap: nowrap;
+}
+.main__footers .fot__btn {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 39px;
+  min-width: 176px;
+  border-radius: 10.8333px;
+  border: 2.7px solid #ffffff;
+  background-color: transparent;
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 13px;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+.main__footers .sub-header {
+  margin-top: 7.6666666667%;
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  color: #b5dfff;
+}
+.main__footers .footer__item img {
+  margin-right: 10px;
+}
+
+.last__footer {
+  width: 100%;
+  height: 66px;
+  background: #2f6192;
+}
+
+.last-log {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 66px;
+}
+.last-log .last-logo {
+  width: 20%;
+  margin-left: 20px;
+}
+.last-log .lastps {
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 13px;
+  color: white;
+  margin-right: 50px;
+}
+.last-log .lastp {
+  text-decoration: underline;
 }/*# sourceMappingURL=style.css.map */
