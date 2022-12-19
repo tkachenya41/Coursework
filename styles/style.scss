@@ -508,7 +508,7 @@ $col6: #b5b5b5;
   padding: 0 10px;
   margin: 60px auto 40px auto;
   .footer__header {
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #ffffff;
     @include font("Montserrat", 700, calc(12px + 0.3vw), 22px, $col3);
     width: 25%;
   }

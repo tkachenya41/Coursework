@@ -618,7 +618,7 @@
   margin: 60px auto 40px auto;
 }
 .headers .footer__header {
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #ffffff;
   font-family: "Montserrat";
   font-weight: 700;
   font-size: calc(12px + 0.3vw);
