@@ -38,22 +38,8 @@
   .first-block .menu__btn {
     display: none;
   }
-  .main__footers {
-    flex-wrap: wrap;
-    flex-direction: column-reverse;
-  }
-  .main__footers .main__footer1,
-  .main__footers .main__footer2 {
-    justify-content: center;
-  }
-  .footer {
-    background-size: 300%;
-  }
 }
 @media (max-width: 768px) {
-  .footer {
-    background-size: 400%;
-  }
   .first-block .header__burger {
     display: block;
     position: relative;
@@ -141,27 +127,6 @@
   }
 }
 @media (max-width: 678px) {
-  .last-log .last-logo {
-    width: 30%;
-  }
-  .main__footers .main__footer1,
-  .main__footers .main__footer2 {
-    justify-content: space-evenly;
-  }
-  .footer {
-    background-size: 625%;
-  }
-  .main__footers .main__footer {
-    max-width: 50%;
-    min-width: 0;
-  }
-  .main__footers .fot__btn {
-    min-width: 0;
-    max-width: 130px;
-  }
-  .main__footers .footer__item img {
-    width: 20%;
-  }
   .third-block {
     padding-top: 35%;
     background-size: 25% 15%, 35% 15%;
@@ -182,5 +147,22 @@
   }
   .second-block .header-prices {
     align-items: center;
+  }
+
+  .main__footers .main__footer {
+    width: 150px;
+  }
+
+  .main__footers {
+    flex-wrap: wrap-reverse;
+  }
+  .headers {
+    display: none;
+  }
+  .footer__img img {
+    width: 20%;
+  }
+  .last-log .last-logo {
+    width: 40%;
   }
 }

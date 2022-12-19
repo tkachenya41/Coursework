@@ -502,60 +502,58 @@ $col6: #b5b5b5;
     max-width: 490px;
   }
 }
+.headers {
+  display: flex;
+  justify-content: center;
+  padding: 0 10px;
+  margin: 60px auto 40px auto;
+  .footer__header {
+    border-bottom: 1px solid black;
+    @include font("Montserrat", 700, calc(12px + 0.3vw), 22px, $col3);
+    width: 25%;
+  }
+}
 
 .main__footers {
   display: flex;
   justify-content: center;
-  background: url(../pics/infin.svg) no-repeat;
-  background-size: 40% 40%;
-  background-position: -15% 120%;
-  padding-bottom: 25px;
-  .main__footer1 {
-    display: flex;
-  }
-  .main__footer2 {
-    display: flex;
-  }
+  padding: 0 10px;
+  margin: 16px auto 0px auto;
+  background: url(../pics/infin.svg) no-repeat left bottom;
+  background-size: 10em;
+  background-position: 0% 110%;
   .main__footer {
-    min-width: 212px;
-    max-width: 212px;
-    margin-top: calc((57px / 1204px) * 100%);
+    width: 25%;
+    margin: 0px auto 15px auto;
   }
-  .footer__header {
-    @include font("Montserrat", 700, calc(12px + 0.1vw), 22px, $col3);
-    border-bottom: 1px solid #b5dfff;
-  }
-  .footer__header:last-of-type {
-    width: 150px;
-  }
+
   .footer__list {
-    @include font("Montserrat", 600, calc(9px + 0.1vw), 15px, #ffffff);
+    max-width: 262px;
+    @include font("Montserrat", 600, calc(9px + 0.3vw), 15px, #ffffff);
   }
   .footer__item {
-    margin-top: calc((8px / 300px) * 100%);
-
-    display: flex;
-    flex-wrap: nowrap;
+    margin-bottom: 5px;
   }
 
   .fot__btn {
-    display: flex;
-    flex-wrap: nowrap;
-    align-items: center;
-    justify-content: space-between;
-    min-height: 39px;
-    min-width: 176px;
-    border-radius: 10.8333px;
-    border: 2.7px solid #ffffff;
-    background-color: transparent;
     @include font("Montserrat", 600, 11px, 13px, #ffffff);
+    border-radius: 10.8333px;
+    background-color: transparent;
+    border: 2px solid #ffffff;
+    padding: 5px 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin-bottom: 10px;
   }
   .sub-header {
-    margin-top: calc((23px / 300px) * 100%);
+    margin-bottom: 8px;
     @include font("Montserrat", 700, 12px, 16px, #b5dfff);
   }
-  .footer__item img {
+  .footer__img {
+    display: flex;
+  }
+  .footer__img img {
     margin-right: 10px;
   }
 }
@@ -570,12 +568,12 @@ $col6: #b5b5b5;
   justify-content: space-between;
   height: 66px;
   .last-logo {
-    width: 20%;
-    margin-left: 20px;
+    width: 273px;
+    padding-left: 10px;
   }
   .lastps {
     @include font("Montserrat", 500, 11px, 13px, $col3);
-    margin-right: 50px;
+    padding-right: 10px;
   }
   .lastp {
     text-decoration: underline;
